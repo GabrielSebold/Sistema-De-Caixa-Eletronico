@@ -20,11 +20,13 @@ public class Principal {
         CaixaEletronico caixa = new CaixaEletronico();
         //======================================
 
+        //Dados do Caixa
         int[] notas = {200, 100, 50, 20, 10};
         int[] quantidadesNotas = {5, 5, 5, 5, 5};
 
         caixa.setValoresNotas(notas);
         caixa.setQuantidadeNotas(quantidadesNotas);
+        //======================================
 
         //Funcionamento do Caixa Eletrônico
         boolean continua = true;

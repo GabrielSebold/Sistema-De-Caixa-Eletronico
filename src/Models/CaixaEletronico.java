@@ -7,6 +7,7 @@ public class CaixaEletronico {
     private int[] valoresNotas = {};
     private int[] quantidadeNotas = {};
 
+    //Getters e Setters do Caixa Eletrônico
     public void setValoresNotas(int[] novosValoresNotas) {
         this.valoresNotas = novosValoresNotas;
         atualizarMenorNota();
@@ -15,7 +16,10 @@ public class CaixaEletronico {
     public void setQuantidadeNotas(int[] novasQuantidadesNotas) {
         this.quantidadeNotas = novasQuantidadesNotas;
     }
+    //================================================================
 
+
+    //Atualiza a variável da menor nota com o menor passado no array
     private void atualizarMenorNota() {
         int menor = 999999999;
         for (int nota : valoresNotas) {
@@ -25,6 +29,8 @@ public class CaixaEletronico {
         }
         this.menorNota = menor;
     }
+    //================================================================
+
 
     //Inicia LogArquivo
     private final LogArquivo notificador = new LogArquivo();
@@ -32,7 +38,7 @@ public class CaixaEletronico {
     private void adicionaLog(String mensagem) {
         notificador.registrarEvento(mensagem); // chama direto
     }
-    //================================================================...
+    //================================================================
 
 
     //Metodo de depósito
