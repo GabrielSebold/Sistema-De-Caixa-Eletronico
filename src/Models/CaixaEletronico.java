@@ -3,11 +3,28 @@ package Models;
 import Logs.LogArquivo;
 
 public class CaixaEletronico {
-    //A alteração do menor valor de nota (no array) precisa trocar também da variável menorNota.
-    //O contrário também é necessário. Caso troque o valor de menorNota é preciso adicioná-la em valoresNotas e quantidadeNotas.
     private int menorNota = 1;
-    private final int[] valoresNotas = {200, 100, 50, 20, 10, 2, 1};
-    private final int[] quantidadeNotas = {5, 5, 5, 5, 5, 5, 5};
+    private int[] valoresNotas = {};
+    private int[] quantidadeNotas = {};
+
+    public void setValoresNotas(int[] novosValoresNotas) {
+        this.valoresNotas = novosValoresNotas;
+        atualizarMenorNota();
+    }
+
+    public void setQuantidadeNotas(int[] novasQuantidadesNotas) {
+        this.quantidadeNotas = novasQuantidadesNotas;
+    }
+
+    private void atualizarMenorNota() {
+        int menor = 999999999;
+        for (int nota : valoresNotas) {
+            if (nota < menor) {
+                menor = nota;
+            }
+        }
+        this.menorNota = menor;
+    }
 
     //Inicia LogArquivo
     private final LogArquivo notificador = new LogArquivo();
@@ -63,7 +80,7 @@ public class CaixaEletronico {
                 int usar = Math.min(restante / nota, disponivel);
 
                 if (usar > 0) {
-                    //Aqui é a quantidade que será usada na posição atual
+                    //Aqui é adicionada a quantidade que será usada na posição atual
                     notasParaUsar[i] = usar;
                     restante -= usar * nota;
                 }

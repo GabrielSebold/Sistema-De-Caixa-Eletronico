@@ -11,3 +11,10 @@
 [15/07/2025 17:05:20] Erro no saque: valor inválido (499.99)
 [15/07/2025 17:05:56] Depósito realizado: R$500.0
 [15/07/2025 17:05:59] Erro no saque: valor inválido (499.99)
+[15/07/2025 18:52:38] Depósito realizado: R$201201.0
+[15/07/2025 18:52:43] Erro no saque: valor inválido (201.0)
+[15/07/2025 18:53:44] Depósito realizado: R$201.0
+[15/07/2025 18:54:34] Depósito realizado: R$201.0
+[15/07/2025 18:54:41] Saque realizado: R$201.0
+[15/07/2025 18:55:16] Depósito realizado: R$15.0
+[15/07/2025 18:55:18] Erro no saque: valor inválido (15.0)
