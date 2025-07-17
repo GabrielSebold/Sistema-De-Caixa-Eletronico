@@ -18,3 +18,13 @@
 [15/07/2025 18:54:41] Saque realizado: R$201.0
 [15/07/2025 18:55:16] Depósito realizado: R$15.0
 [15/07/2025 18:55:18] Erro no saque: valor inválido (15.0)
+[15/07/2025 19:03:20] Depósito realizado: R$15.0
+[15/07/2025 19:03:23] Erro no saque: valor inválido (15.0)
+[15/07/2025 19:03:53] Depósito realizado: R$2000.0
+[15/07/2025 19:03:56] Erro no saque: Não foi possível montar R$2000.0 com as notas disponíveis
+[17/07/2025 14:09:22] Depósito realizado: R$200.0
+[17/07/2025 14:09:25] Saque realizado: R$200.0
+[17/07/2025 14:18:41] Depósito realizado: R$200.0
+[17/07/2025 14:18:47] Saque realizado: R$200.0
+[17/07/2025 15:03:19] Depósito realizado: R$2000.0
+[17/07/2025 15:03:22] Erro no saque: Não foi possível montar R$2000.0 com as notas disponíveis

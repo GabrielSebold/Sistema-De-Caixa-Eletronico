@@ -31,6 +31,29 @@ public class CaixaEletronico {
     }
     //================================================================
 
+    //Organizador simples para as notas
+    public void ordenarNotasEQuantidades() {
+        int n = valoresNotas.length;
+        for (int i = 0; i < n - 1; i++) {
+            int peimeiroIndice = i;
+            for (int maiorNota = i + 1; maiorNota < n; maiorNota++) {
+                if (valoresNotas[maiorNota] > valoresNotas[peimeiroIndice]) {
+                    peimeiroIndice = maiorNota;
+                }
+            }
+            if (peimeiroIndice != i) {
+                int auxiliarNota = valoresNotas[i];
+                valoresNotas[i] = valoresNotas[peimeiroIndice];
+                valoresNotas[peimeiroIndice] = auxiliarNota;
+
+                int auxiliarQuantidade = quantidadeNotas[i];
+                quantidadeNotas[i] = quantidadeNotas[peimeiroIndice];
+                quantidadeNotas[peimeiroIndice] = auxiliarQuantidade;
+            }
+        }
+        this.menorNota = valoresNotas[n - 1];
+    }
+    //================================================================
 
     //Inicia LogArquivo
     private final LogArquivo notificador = new LogArquivo();

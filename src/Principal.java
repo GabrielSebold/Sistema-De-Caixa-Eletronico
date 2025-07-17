@@ -21,11 +21,12 @@ public class Principal {
         //======================================
 
         //Dados do Caixa
-        int[] notas = {200, 100, 50, 20, 10};
-        int[] quantidadesNotas = {5, 5, 5, 5, 5};
+        int[] notas = {100, 10, 50, 200, 20};
+        int[] quantidadesNotas = {5, 5, 5, 3, 4};
 
         caixa.setValoresNotas(notas);
         caixa.setQuantidadeNotas(quantidadesNotas);
+        caixa.ordenarNotasEQuantidades();
         //======================================
 
         //Funcionamento do Caixa Eletrônico
