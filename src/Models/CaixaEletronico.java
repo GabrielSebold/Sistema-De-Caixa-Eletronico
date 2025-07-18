@@ -10,24 +10,10 @@ public class CaixaEletronico {
     //Getters e Setters do Caixa Eletrônico
     public void setValoresNotas(int[] novosValoresNotas) {
         this.valoresNotas = novosValoresNotas;
-        atualizarMenorNota();
     }
 
     public void setQuantidadeNotas(int[] novasQuantidadesNotas) {
         this.quantidadeNotas = novasQuantidadesNotas;
-    }
-    //================================================================
-
-
-    //Atualiza a variável da menor nota com o menor passado no array
-    private void atualizarMenorNota() {
-        int menor = 999999999;
-        for (int nota : valoresNotas) {
-            if (nota < menor) {
-                menor = nota;
-            }
-        }
-        this.menorNota = menor;
     }
     //================================================================
 
